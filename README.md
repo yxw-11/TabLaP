@@ -38,7 +38,7 @@ python ftq/evaluate.py
 
 For evaluate TabLaP performance:
 ```bash
-python wtq/tablap_eval.py
+python ftq/tablap_eval.py
 ```
 
 ### TabFact_small dataset
@@ -51,13 +51,13 @@ The codes for fine-tuning Tapex-large and OmniTab-large using your own datasets 
 
 2. After obtaining your dataset, for fine-tuing (LoRA), you can try:
 ```bash
-python ftq/model_ft.py
 python wtq/model_ft.py
+python ftq/model_ft.py
 ```
 For inference, you can try:
 ```bash
-python ftq/inference.py
 python wtq/inference.py
+python ftq/inference.py
 ```
 Besides, we also include our checkpoints for AnsSelector and TwEvaluator in the "example_ckpt" directory (please download using this link: https://drive.google.com/drive/folders/1Ss2ia1NswGZw1xEsHexouS4IU43ojAy6?usp=drive_link).
 We share the same AnsSelector and TwEvaluator for both datasets, since the tasks are simialr, however, you can further fine-tuning the modules for specific datasets.
