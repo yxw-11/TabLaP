@@ -1,0 +1,6 @@
+name: tab_lap
+channels:
+  - defaults
+dependencies:
+  - python=3.9
+prefix: /data/gpfs/projects/punim2168/fetaqa-e2e/tab_lap
