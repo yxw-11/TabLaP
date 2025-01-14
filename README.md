@@ -1,6 +1,6 @@
 # TabLaP: Numerical Problem Solver for Tabular Question Answering
 This project is focused on improving the performance of LLMs for numerical problems and its reliability over tabular data.
-![Model Overview](model_overview.pdf)
+![Model Overview](model_overview.png)
 
 
 ## Create Virtual Environment
