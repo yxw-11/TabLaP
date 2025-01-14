@@ -1,5 +1,5 @@
 # TabLaP: Numerical Problem Solver for Tabular Question Answering
-This project is focused on improving the performance of LLMs for numerical problems and its reliability over tabular data.
+This project is focused on improving the performance of LLMs for numerical problems and its reliability over tabular data. Accepted on AAAI 2025
 
 ## Create Virtual Environment
 Create a conda environment named TabLaP 
