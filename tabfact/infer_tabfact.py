@@ -69,15 +69,15 @@ from transformers.pipelines.pt_utils import KeyDataset
 model = AutoModelForCausalLM.from_pretrained(
     "meta-llama/Meta-Llama-3-8B-Instruct",
     quantization_config=quant_config,
-    token="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",
+    token="YOUR_TOKEN",
     device_map='auto',
-    cache_dir="/data/gpfs/projects/punim2168/cache"
+    cache_dir="cache_dir"
 )
 tokenizer3 = AutoTokenizer.from_pretrained(
     "meta-llama/Meta-Llama-3-8B-Instruct",
     trust_remote_code=True,
-    token="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",
-    cache_dir="/data/gpfs/projects/punim2168/cache"
+    token="YOUR_TOKEN",
+    cache_dir="cache_dir"
 )
 tokenizer3.padding_side = "left"
 if tokenizer3.pad_token_id is None:
