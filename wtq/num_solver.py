@@ -7,7 +7,7 @@ import subprocess
 
 from prompts.prompt_wtq import PROMPT_MATH_SOLVER
 from data_sets.model import Model
-from evaluate import correct_num
+from wtq.evaluate import correct_num
 from utils.tool_func import read_json_file, write_list_to_txt
 
 
