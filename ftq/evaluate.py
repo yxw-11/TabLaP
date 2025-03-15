@@ -42,10 +42,10 @@ def correct_num(model_ans, test_label):
 
 
 if __name__ == '__main__':
-    file_path = "../results/ftq_results/test_labels.txt"
+    file_path = "results/ftq_results/test_labels.txt"
     test_labels = read_list_from_file(file_path)
     # math_solver_tab results
-    ans_path = "../results/ftq_results/num_solver_res.txt"
+    ans_path = "results/ftq_results/num_solver_res.txt"
     refine_propose = read_list_from_file(ans_path)
     # format list
     for i, text in enumerate(test_labels):
