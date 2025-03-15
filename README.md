@@ -1,7 +1,8 @@
 # TabLaP: Numerical Problem Solver for Tabular Question Answering
 This project is focused on improving the performance of LLMs for numerical problems and its reliability over tabular data.
 ![Model Overview](model_overview.png)
-
+Paper link:
+https://arxiv.org/pdf/2410.12846
 
 ## Create Virtual Environment
 Create a conda environment named TabLaP 
@@ -10,7 +11,7 @@ conda env create -f environment.yaml
 ```
 
 ## Python Path
-If you find  errors regarding pkg path, please run following command before the scripts
+Execute the following command in the TabLaP directory
 ```
 export PYTHONPATH=$(dirname $(pwd)):$PYTHONPATH
 ```
@@ -18,7 +19,7 @@ export PYTHONPATH=$(dirname $(pwd)):$PYTHONPATH
 ## Reproducing Experiment Results
 To reproduce the experiment results, please follow these steps:
 ### WTQ dataset
-Navigate to the wtq directory and run the evaluation scripts
+Navigate to the TabLaP directory and run the evaluation scripts
 For evaluate NumSolver performance:
 ```bash
 python wtq/evaluate.py
@@ -30,7 +31,7 @@ python wtq/tablap_eval.py
 ```
 
 ### FTQ dataset
-Navigate to the ftq directory and run the evaluation script:
+Navigate to the TabLaP directory and run the evaluation script:
 For evaluate NumSolver performance:
 ```bash
 python ftq/evaluate.py
@@ -62,6 +63,15 @@ python ftq/inference.py
 Besides, we also include our checkpoints for AnsSelector and TwEvaluator in the "example_ckpt" directory (please download using this link: https://drive.google.com/drive/folders/1Ss2ia1NswGZw1xEsHexouS4IU43ojAy6?usp=drive_link).
 We share the same AnsSelector and TwEvaluator for both datasets, since the tasks are simialr, however, you can further fine-tuning the modules for specific datasets.
 
+3. If you want to expolore NumSolver alone, you can try:
+```bash
+python wtq/num_solver.py
+python ftq/num_solver.py
+```
+Note: please set your api_key before running by: 
+```bash
+export OPENAI_API_KEY="your_key"
+```
 ## Contact
 If you have any further questions, please email yuxiang.wang8@student.unimelb.edu.au
 
