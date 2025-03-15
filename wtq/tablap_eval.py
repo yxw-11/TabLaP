@@ -8,7 +8,7 @@ from common_eval.evaluator import official_eval
 
 
 def get_verif_res():
-    path = "../results/wtq_results/TabLaP/tw_evaluator_res.txt"
+    path = "results/wtq_results/TabLaP/tw_evaluator_res.txt"
     bin_res = read_txt_to_list(path)
     bin_res = bin_res[0].split('\n')
     false_id = []
@@ -124,26 +124,26 @@ def check_sample(label, model_ans):
 
 
 if __name__ == '__main__':
-    file_path = "../results/wtq_results/TabLaP/ans_selector_res.txt"
+    file_path = "results/wtq_results/TabLaP/ans_selector_res.txt"
     cls_ans = read_txt_to_list(file_path)
     cls_ans = cls_ans[0].split('\n')
 
-    file_path = "../results/wtq_results/TabLaP/refine_ans/num_solver_res.txt"
+    file_path = "results/wtq_results/TabLaP/refine_ans/num_solver_res.txt"
     predict_ans = read_list_from_file(file_path)
     predict_ans = format_string(predict_ans)
 
-    label_path = "../results/wtq_results/test_labels.txt"
+    label_path = "results/wtq_results/test_labels.txt"
     test_labels = read_list_from_file(label_path)
     test_labels = format_string(test_labels)
 
-    mix_path = "../results/wtq_results/TabLaP/refine_ans/mix_sc_res.txt"
+    mix_path = "results/wtq_results/TabLaP/refine_ans/mix_sc_res.txt"
     mix_sc_res = read_list_from_file(mix_path)
     mix_sc_res = format_string(mix_sc_res)
 
-    # file_path = "../results/wtq_results/TabLaP/refine_ans/num_solver_res.txt"
+    # file_path = "results/wtq_results/TabLaP/refine_ans/num_solver_res.txt"
     # write_list_to_txt(predict_ans, file_path)
 
-    # file_path = "../results/wtq_results/TabLaP/refine_ans/mix_sc_res.txt"
+    # file_path = "results/wtq_results/TabLaP/refine_ans/mix_sc_res.txt"
     # write_list_to_txt(mix_sc_res, file_path)
 
     # get TabLaP results
