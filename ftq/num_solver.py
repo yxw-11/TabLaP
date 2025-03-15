@@ -197,8 +197,6 @@ if __name__ == '__main__':
     for i in range(len(feta_test)):
         prompt_i = generate_prompt(test_tables[i], feta_test[i][-1], feta_test[i][0], PROMPT_PYTHON)
         prompt_p.append(prompt_i)
-    # set openai api key
-    os.environ["OPENAI_API_KEY"] = "your_key"
     model = Model(model_name="gpt-3.5-turbo-0125", provider="openai")
     refine_ans, org_ans, instructions = call_model(prompt_t, prompt_p, model)
     # further refine the answers
