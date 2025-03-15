@@ -7,7 +7,7 @@ from common_eval.evaluator import official_eval
 
 
 def get_verif_res():
-    path = "../results/ftq_results/TabLaP/tw_evaluator_res.txt"
+    path = "results/ftq_results/TabLaP/tw_evaluator_res.txt"
     bin_res = read_txt_to_list(path)
     bin_res = bin_res[0].split('\n')
     false_id = []
@@ -137,17 +137,17 @@ def mab_ucb(model_ans, sota_ans, combine_ans, test_labels, false_id):
 
 
 if __name__ == '__main__':
-    file_path = "../results/ftq_results/TabLaP/ans_selector_res.txt"
+    file_path = "results/ftq_results/TabLaP/ans_selector_res.txt"
     cls_ans = read_txt_to_list(file_path)
     cls_ans = cls_ans[0].split('\n')
 
-    file_path = "../results/ftq_results/num_solver_res.txt"
+    file_path = "results/ftq_results/num_solver_res.txt"
     predict_ans = read_list_from_file(file_path)
 
-    label_path = "../results/ftq_results/test_labels.txt"
+    label_path = "results/ftq_results/test_labels.txt"
     test_labels = read_list_from_file(label_path)
 
-    mix_path = "../results/ftq_results/mix_sc_res.txt"
+    mix_path = "results/ftq_results/mix_sc_res.txt"
     mix_sc_res = read_list_from_file(mix_path)
 
     # format results
