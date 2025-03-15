@@ -184,8 +184,8 @@ def filter_answer_omit(raw_context) -> str:
 
 
 if __name__ == '__main__':
-    train_set_path = "../data_sets/ftq/ftq_test.json"
-    test_set_path = "../data_sets/ftq/ftq_train.json"
+    train_set_path = "data_sets/ftq/ftq_test.json"
+    test_set_path = "data_sets/ftq/ftq_train.json"
     feta_train, train_ans, feta_test, test_ans = get_dataset(train_set_path, test_set_path)
     test_tables, train_tables = get_tables(feta_train, feta_test)
     # generate prompts
