@@ -225,7 +225,7 @@ def evaluate_res(labels, predict):
 
 
 if __name__ == '__main__':
-    table_qa_data = read_json_file("../data_sets/wtq/wtq.json")
+    table_qa_data = read_json_file("data_sets/wtq/wtq.json")
     question_all = get_all_questions(table_qa_data)
     train_dataset = get_train_data(table_qa_data)
 
@@ -241,7 +241,7 @@ if __name__ == '__main__':
         if i not in train_id:
             test_id.append(i)
 
-    id_table = read_json_file("../data_sets/wtq/id_table.json")
+    id_table = read_json_file("data_sets/wtq/id_table.json")
     test_dataset = get_test_data(table_qa_data)
     wrong_pair = mix_sc_wrong_pair()
     # table_q is the information for all the test data
