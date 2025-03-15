@@ -266,8 +266,6 @@ if __name__ == '__main__':
     for q_l in train_dataset:
         prompt_i = generate_prompt(q_l, PROMPT_MATH_SOLVER)
         prompt_list.append(prompt_i)
-    # set openai api key
-    os.environ["OPENAI_API_KEY"] = "your_key"
     # openai model
     model = Model(model_name="gpt-3.5-turbo-0125", provider="openai")
 
