@@ -65,10 +65,10 @@ def format_string(data_list):
 
 
 if __name__ == '__main__':
-    file_path = "../results/wtq_results/num_solver_res.txt"
+    file_path = "results/wtq_results/num_solver_res.txt"
     predict_ans = read_list_from_file(file_path)
     predict_ans = format_string(predict_ans)
-    label_path = "../results/wtq_results/test_labels.txt"
+    label_path = "results/wtq_results/test_labels.txt"
     test_labels = read_list_from_file(label_path)
     test_labels = format_string(test_labels)
     num = correct_num(test_labels, predict_ans)
