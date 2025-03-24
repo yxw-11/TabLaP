@@ -4,6 +4,13 @@ This project is focused on improving the performance of LLMs for numerical probl
 Paper link:
 https://arxiv.org/pdf/2410.12846
 
+@article{wang2024accurate,
+  title={Accurate and Regret-aware Numerical Problem Solver for Tabular Question Answering},
+  author={Wang, Yuxiang and Qi, Jianzhong and Gan, Junhao},
+  journal={arXiv preprint arXiv:2410.12846},
+  year={2024}
+}
+
 ## Create Virtual Environment
 Create a conda environment named TabLaP 
 ```
