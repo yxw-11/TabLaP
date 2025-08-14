@@ -22,7 +22,7 @@ def get_all_questions(table_qa):
 
 def get_train_data(table_qa):
     random.seed(100)
-    # indices_range = range(421)
+    indices_range = range(421)
     random_indices = random.sample(indices_range, len(table_qa))
 
     train_dataset = []
