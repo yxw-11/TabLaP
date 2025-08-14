@@ -20,11 +20,10 @@ def get_all_questions(table_qa):
             questions.append(tmp)
     return questions
 
-
 def get_train_data(table_qa):
     random.seed(100)
-    indices_range = range(421)
-    random_indices = random.sample(indices_range, 211)
+    # indices_range = range(421)
+    random_indices = random.sample(indices_range, len(table_qa))
 
     train_dataset = []
 
@@ -35,7 +34,7 @@ def get_train_data(table_qa):
             train_dataset.append(tmp)
     return train_dataset
 
-
+# Note: If you want to test on the entire WTQ, you need to change the indices_range below.
 def get_test_data(table_qa):
     random.seed(100)
     indices_range = range(421)
