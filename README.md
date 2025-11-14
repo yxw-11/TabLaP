@@ -4,11 +4,14 @@ This project is focused on improving the performance of LLMs for numerical probl
 Paper link:
 https://arxiv.org/pdf/2410.12846
 ```
-@article{wang2024accurate,
-  title={Accurate and Regret-aware Numerical Problem Solver for Tabular Question Answering},
+@inproceedings{wang2025accurate,
+  title={Accurate and regret-aware numerical problem solver for tabular question answering},
   author={Wang, Yuxiang and Qi, Jianzhong and Gan, Junhao},
-  journal={arXiv preprint arXiv:2410.12846},
-  year={2024}
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={39},
+  number={12},
+  pages={12775--12783},
+  year={2025}
 }
 ```
 ## Create Virtual Environment
